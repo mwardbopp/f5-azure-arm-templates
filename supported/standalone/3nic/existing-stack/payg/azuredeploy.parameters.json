@@ -15,7 +15,7 @@
             "value": ""
         },
         "instanceName": {
-            "value": "f5vm01"
+            "value": "mwb-f5vm01"
         },
         "numberOfExternalIps": {
             "value": 1
