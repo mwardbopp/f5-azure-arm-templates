@@ -122,6 +122,10 @@
             },
             "type": "string"
         },
+        "diskEncryptionSetId": {
+            "type": "string",
+            "defaultvalue": ""
+        },
         "imageName": {
             "allowedValues": [
                 "Best25Mbps",
@@ -818,9 +822,13 @@
                 "storageProfile": {
                     "osDisk": {
                         "blobUri": "[variables('customImage')]",
+                        "managedDisk: {
+                            "storageAccountType": "[if(contains(variables('premiumInstanceArray'), parameters('instanceType')), 'Premium_LRS', 'Standard_LRS')]",
+                            "diskEncryptionSet": {
+                                "id": "[parameters('diskEncryptionSetId')]"
+                            },                        
                         "osState": "Generalized",
-                        "osType": "Linux",
-                        "storageAccountType": "[if(contains(variables('premiumInstanceArray'), parameters('instanceType')), 'Premium_LRS', 'Standard_LRS')]"
+                        "osType": "Linux"
                     }
                 }
             },
