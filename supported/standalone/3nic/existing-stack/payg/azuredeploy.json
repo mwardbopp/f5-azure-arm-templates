@@ -341,7 +341,7 @@
             },
             "platformImage": {
                 "imageReference": "[variables('imageReference')]",
-                "osDisk": {
+                "+": {
                     "createOption": "FromImage"
                 }
             }
@@ -820,7 +820,7 @@
                         "blobUri": "[variables('customImage')]",
                         "osState": "Generalized",
                         "osType": "Linux",
-                        -"diskEncryptionSetId": {
+                        "diskEncryptionSetId": {
                             "value": "/subscriptions/c8bd4483-a1a2-47c4-acc8-4a49fbf180f3/resourceGroups/wardbopp-not-automated/providers/Microsoft.Compute/diskEncryptionSets/mwb-diskencryptset"
                         },
                         "storageAccountType": "[if(contains(variables('premiumInstanceArray'), parameters('instanceType')), 'Premium_LRS', 'Standard_LRS')]"
