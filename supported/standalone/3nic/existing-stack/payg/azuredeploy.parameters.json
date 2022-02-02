@@ -36,25 +36,25 @@
             "value": "ltm:nominal"
         },
         "vnetName": {
-            "value": ""
+            "value": "wardbopp-vnet"
         },
         "vnetResourceGroupName": {
-            "value": ""
+            "value": "wardbopp-not-automated"
         },
         "mgmtSubnetName": {
-            "value": ""
+            "value": "mwb-mgmt"
         },
         "mgmtIpAddress": {
             "value": "DYNAMIC"
         },
         "externalSubnetName": {
-            "value": ""
+            "value": "mwb-public"
         },
         "externalIpAddressRangeStart": {
             "value": "DYNAMIC"
         },
         "internalSubnetName": {
-            "value": ""
+            "value": "mwb-internal"
         },
         "internalIpAddress": {
             "value": "DYNAMIC"
@@ -84,7 +84,7 @@
             "value": "OPTIONAL"
         },
         "restrictedSrcAddress": {
-            "value": ""
+            "value": "37.228.202.168"
         },
         "tagValues": {
             "value": {
