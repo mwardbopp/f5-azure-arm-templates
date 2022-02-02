@@ -23,6 +23,9 @@
         "instanceType": {
             "value": "Standard_DS3_v2"
         },
+        "diskEncryptionSetId": {
+            "value": "/subscriptions/c8bd4483-a1a2-47c4-acc8-4a49fbf180f3/resourceGroups/wardbopp-not-automated/providers/Microsoft.Compute/diskEncryptionSets/mwb-diskencryptset"
+        },
         "imageName": {
             "value": "Best1Gbps"
         },
